@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.parse.starter;
+package com.bharv.hhhn;
 
 public final class Manifest {
     public static final class permission {
@@ -14,6 +14,6 @@ public final class Manifest {
 	  to match your app's package name + ".permission.C2D_MESSAGE".
     
          */
-        public static final String C2D_MESSAGE="com.parse.starter.permission.C2D_MESSAGE";
+        public static final String C2D_MESSAGE="com.bharv.hhhn.permission.C2D_MESSAGE";
     }
 }

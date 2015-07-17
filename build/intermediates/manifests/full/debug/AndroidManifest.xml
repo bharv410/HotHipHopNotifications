@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.parse.starter"
+    package="com.bharv.hhhn"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -22,13 +22,13 @@
 	  to match your app's package name + ".permission.C2D_MESSAGE".
     -->
     <permission
-        android:name="com.parse.starter.permission.C2D_MESSAGE"
+        android:name="com.bharv.hhhn.permission.C2D_MESSAGE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.parse.starter.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.bharv.hhhn.permission.C2D_MESSAGE" />
 
     <application
-        android:name="com.parse.starter.ParseApplication"
+        android:name="com.bharv.hhhn.ParseApplication"
         android:allowBackup="true"
         android:icon="@drawable/notif"
         android:label="@string/app_name" >
@@ -40,7 +40,7 @@
             android:value="@string/parse_client_key" />
 
         <activity
-            android:name="com.parse.starter.ParseStarterProjectActivity"
+            android:name="com.bharv.hhhn.ParseStarterProjectActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,20 +49,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.parse.starter.GoToSongActivity"
+            android:name="com.bharv.hhhn.GoToSongActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.bharv.hhhn.SendPushActivity"
             android:label="@string/app_name" >
         </activity>
 
         <service android:name="com.parse.PushService" />
 
         <receiver android:name="com.parse.ParseBroadcastReceiver" >
-            <intent-filter>
+            <intent-filter android:priority="100" >
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.USER_PRESENT" />
             </intent-filter>
         </receiver>
         <receiver
-            android:name="com.parse.starter.CustomParseReceiver"
+            android:name="com.bharv.hhhn.CustomParseReceiver"
             android:exported="false" >
             <intent-filter>
                 <action android:name="com.parse.push.intent.RECEIVE" />
@@ -78,7 +82,7 @@
                 <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
 <!-- 				  IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
-                <category android:name="com.parse.starter" />
+                <category android:name="com.bharv.hhhn" />
             </intent-filter>
         </receiver>
     </application>

@@ -3,6 +3,8 @@ manifest
 ADDED from AndroidManifest.xml:2:1
 	package
 		ADDED from AndroidManifest.xml:3:5
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
 	android:versionName
 		ADDED from AndroidManifest.xml:5:5
 	android:versionCode
@@ -53,13 +55,13 @@ uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from AndroidManifest.xml:16:5
 	android:name
 		ADDED from AndroidManifest.xml:16:22
-permission#com.parse.starter.permission.C2D_MESSAGE
+permission#com.bharv.hhhn.permission.C2D_MESSAGE
 ADDED from AndroidManifest.xml:22:5
 	android:protectionLevel
 		ADDED from AndroidManifest.xml:22:17
 	android:name
 		ADDED from AndroidManifest.xml:23:17
-uses-permission#com.parse.starter.permission.C2D_MESSAGE
+uses-permission#com.bharv.hhhn.permission.C2D_MESSAGE
 ADDED from AndroidManifest.xml:24:5
 	android:name
 		ADDED from AndroidManifest.xml:24:22
@@ -85,7 +87,7 @@ ADDED from AndroidManifest.xml:34:9
 		ADDED from AndroidManifest.xml:36:13
 	android:name
 		ADDED from AndroidManifest.xml:35:13
-activity#com.parse.starter.ParseStarterProjectActivity
+activity#com.bharv.hhhn.ParseStarterProjectActivity
 ADDED from AndroidManifest.xml:38:9
 	android:label
 		ADDED from AndroidManifest.xml:40:13
@@ -101,67 +103,75 @@ category#android.intent.category.LAUNCHER
 ADDED from AndroidManifest.xml:44:17
 	android:name
 		ADDED from AndroidManifest.xml:44:27
-activity#com.parse.starter.GoToSongActivity
+activity#com.bharv.hhhn.GoToSongActivity
 ADDED from AndroidManifest.xml:48:9
 	android:label
 		ADDED from AndroidManifest.xml:50:13
 	android:name
 		ADDED from AndroidManifest.xml:49:13
-service#com.parse.PushService
+activity#com.bharv.hhhn.SendPushActivity
 ADDED from AndroidManifest.xml:53:9
+	android:label
+		ADDED from AndroidManifest.xml:55:13
 	android:name
-		ADDED from AndroidManifest.xml:53:18
+		ADDED from AndroidManifest.xml:54:13
+service#com.parse.PushService
+ADDED from AndroidManifest.xml:58:9
+	android:name
+		ADDED from AndroidManifest.xml:58:18
 receiver#com.parse.ParseBroadcastReceiver
-ADDED from AndroidManifest.xml:54:9
+ADDED from AndroidManifest.xml:59:9
 	android:name
-		ADDED from AndroidManifest.xml:54:19
+		ADDED from AndroidManifest.xml:59:19
 intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.action.USER_PRESENT
-ADDED from AndroidManifest.xml:55:13
+ADDED from AndroidManifest.xml:60:13
+	android:priority
+		ADDED from AndroidManifest.xml:60:28
 action#android.intent.action.BOOT_COMPLETED
-ADDED from AndroidManifest.xml:56:17
+ADDED from AndroidManifest.xml:61:17
 	android:name
-		ADDED from AndroidManifest.xml:56:25
+		ADDED from AndroidManifest.xml:61:25
 action#android.intent.action.USER_PRESENT
-ADDED from AndroidManifest.xml:57:17
+ADDED from AndroidManifest.xml:62:17
 	android:name
-		ADDED from AndroidManifest.xml:57:25
-receiver#com.parse.starter.CustomParseReceiver
-ADDED from AndroidManifest.xml:60:9
+		ADDED from AndroidManifest.xml:62:25
+receiver#com.bharv.hhhn.CustomParseReceiver
+ADDED from AndroidManifest.xml:65:9
 	android:exported
-		ADDED from AndroidManifest.xml:61:19
+		ADDED from AndroidManifest.xml:66:19
 	android:name
-		ADDED from AndroidManifest.xml:60:19
+		ADDED from AndroidManifest.xml:65:19
 intent-filter#com.parse.push.intent.DELETE+com.parse.push.intent.OPEN+com.parse.push.intent.RECEIVE
-ADDED from AndroidManifest.xml:62:13
+ADDED from AndroidManifest.xml:67:13
 action#com.parse.push.intent.RECEIVE
-ADDED from AndroidManifest.xml:63:17
+ADDED from AndroidManifest.xml:68:17
 	android:name
-		ADDED from AndroidManifest.xml:63:25
+		ADDED from AndroidManifest.xml:68:25
 action#com.parse.push.intent.DELETE
-ADDED from AndroidManifest.xml:64:17
+ADDED from AndroidManifest.xml:69:17
 	android:name
-		ADDED from AndroidManifest.xml:64:25
+		ADDED from AndroidManifest.xml:69:25
 action#com.parse.push.intent.OPEN
-ADDED from AndroidManifest.xml:65:17
+ADDED from AndroidManifest.xml:70:17
 	android:name
-		ADDED from AndroidManifest.xml:65:25
+		ADDED from AndroidManifest.xml:70:25
 receiver#com.parse.GcmBroadcastReceiver
-ADDED from AndroidManifest.xml:68:9
+ADDED from AndroidManifest.xml:73:9
 	android:permission
-		ADDED from AndroidManifest.xml:69:19
+		ADDED from AndroidManifest.xml:74:19
 	android:name
-		ADDED from AndroidManifest.xml:68:19
-intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+com.parse.starter
-ADDED from AndroidManifest.xml:70:13
+		ADDED from AndroidManifest.xml:73:19
+intent-filter#com.bharv.hhhn+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from AndroidManifest.xml:75:13
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from AndroidManifest.xml:71:17
+ADDED from AndroidManifest.xml:76:17
 	android:name
-		ADDED from AndroidManifest.xml:71:25
+		ADDED from AndroidManifest.xml:76:25
 action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from AndroidManifest.xml:72:17
-	android:name
-		ADDED from AndroidManifest.xml:72:25
-category#com.parse.starter
 ADDED from AndroidManifest.xml:77:17
 	android:name
-		ADDED from AndroidManifest.xml:77:27
+		ADDED from AndroidManifest.xml:77:25
+category#com.bharv.hhhn
+ADDED from AndroidManifest.xml:82:17
+	android:name
+		ADDED from AndroidManifest.xml:82:27

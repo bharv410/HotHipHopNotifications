@@ -1,16 +1,11 @@
-package com.parse.starter;
+package com.bharv.hhhn;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Toast;
 
-import com.parse.ParseAnalytics;
-import com.parse.ParseException;
 import com.parse.ParsePushBroadcastReceiver;
-import com.parse.SaveCallback;
 
 import org.json.JSONObject;
 
@@ -35,16 +30,19 @@ public class CustomParseReceiver extends ParsePushBroadcastReceiver {
                 String artist = receivedJSON.getString(ARTIST_TITLE);
                 String song = receivedJSON.getString(SONG_TITLE);
                 String url = receivedJSON.getString(URL);
-                Log.d("benmark", "artist = " + artist + "url = " + url);
+
+
+                Intent i = new Intent(context, GoToSongActivity.class);
+                i.putExtras(intent.getExtras());
+                i.putExtra("artist", artist);
+                i.putExtra("song", song);
+                i.putExtra("url", url);
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(i);
 
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        Intent i = new Intent(context, GoToSongActivity.class);
-        i.putExtras(intent.getExtras());
-        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        context.startActivity(i);
     }
 }

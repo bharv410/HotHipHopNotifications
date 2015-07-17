@@ -1,4 +1,4 @@
-package com.parse.starter;
+package com.bharv.hhhn;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -16,12 +16,12 @@ public class GoToSongActivity extends Activity {
         setContentView(R.layout.main);
 
         ParseObject gameScore = new ParseObject("ReallyWentToSong");
-        gameScore.put("score", 1337);
+        gameScore.put("song name", getIntent().getStringExtra("song"));
         gameScore.put("playerName", "Sean Plott");
         gameScore.put("cheatMode", false);
         gameScore.saveInBackground();
 
-        String url = "http://bit.ly/1e584dD";
+        String url = getIntent().getStringExtra("url");
 
         if (!url.startsWith("http://") && !url.startsWith("https://")) url = "http://" + url;
 
