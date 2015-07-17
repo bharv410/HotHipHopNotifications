@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/benjamin.harvey/Downloads/Parse-Starter-Project-1/ParseStarterProject/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">Hot Hip Hop Notifs</string>
+    <string name="hello">You will notifications when your first song from a top artist comes up. Click below for an example !</string>
+    <string name="parse_app_id">hM4OufALnmgM2XFA8y7FgsHLCjsd7H0YZi6RK44G</string>
+    <string name="parse_client_key">iKX3gmbboxWl1TqRK3omyQXJNgUMP1lEsETsKJAD</string>
+</resources>
